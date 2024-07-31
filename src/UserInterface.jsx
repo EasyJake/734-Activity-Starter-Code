@@ -1,16 +1,26 @@
-import React from "react"
-import CollectorButton from './CollectorButton'
-import SubmitForm from './SubmitForm'
+import React from 'react';
+import CollectorButton from './CollectorButton';
+import SubmitForm from './SubmitForm';
 
-export default function UserInterface () {
+const UserInterface = () => {
+  const textStyle = {
+    color: "#FEE001",
+    fontFamily: "Luminari, fantasy",
+    fontSize: 24,
+    textShadow: "1px 1px 2px red",
+    textAlign: "center",
+    marginBottom: "20px"
+  };
+
   return (
     <div>
-      <h2>We carry the latest and greatest editions of your favorite comic books!</h2>
-      <h2>Are you a collector?</h2>
       <CollectorButton />
-
-      <h2>Have a special request? Click here to fill out our form</h2>
+      <p style={textStyle}>
+        Have a special request? Click here to fill out our form
+      </p>
       <SubmitForm />
     </div>
-  )
-}
+  );
+};
+
+export default UserInterface;

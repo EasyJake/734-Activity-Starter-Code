@@ -2,10 +2,12 @@ import React, { useContext } from "react";
 import StylesContext from "./StylesContext";
 
 const CollectorButton = () => {
-  const styles = useContext(StylesContext);
+  const buttonStyling = useContext(StylesContext);
 
   return (
-    <button style={styles}>Click Here!</button>
+    <div>
+      <button style={buttonStyling}>Are you a collector?</button>
+    </div>
   );
 };
 
